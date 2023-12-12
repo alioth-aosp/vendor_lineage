@@ -69,7 +69,6 @@ PRODUCT_PACKAGES += \
     GameSpace \
     LMOFreeform \
     LMOFreeformSidebar \
-    MatLog \
     OmniJaws \
     OmniStyle
 
