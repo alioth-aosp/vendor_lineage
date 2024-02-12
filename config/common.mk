@@ -3,6 +3,9 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/matrixx.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
+ifeq ($(WITH_PIXEL_OVERLAYS),true)
+$(call inherit-product-if-exists, vendor/pixeloverlays/config.mk)
+endif
 
 PRODUCT_BRAND ?= ProjectMatrixx
 
